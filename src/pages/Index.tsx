@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { useIsMobile } from '@/hooks/use-mobile'; 
 import Header from '@/components/layout/Header';
@@ -7,6 +6,7 @@ import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Services from '@/components/sections/Services';
 import Contact from '@/components/sections/Contact';
+import Gallery from '@/components/sections/Gallery';
 import FloatingButton from '@/components/ui/FloatingButton';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
@@ -60,6 +60,7 @@ const Index = () => {
         <Hero />
         <About />
         <Services />
+        <Gallery />
         <Contact />
       </main>
       <FloatingButton />
