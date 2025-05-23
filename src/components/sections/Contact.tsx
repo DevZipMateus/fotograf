@@ -1,7 +1,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -85,6 +85,31 @@ const Contact = () => {
             Estamos prontos para atender suas necessidades de personalização. Entre em contato 
             através de um dos nossos canais de atendimento ou nos envie uma mensagem pelo WhatsApp.
           </p>
+        </motion.div>
+
+        {/* Instagram Highlight */}
+        <motion.div 
+          className="mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+        >
+          <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 p-8 rounded-xl text-white text-center shadow-lg">
+            <Instagram className="h-12 w-12 mx-auto mb-4" />
+            <h3 className="text-2xl font-bold mb-2">Siga-nos no Instagram!</h3>
+            <p className="text-lg mb-6 opacity-90">
+              Veja mais dos nossos trabalhos e inspire-se com criações únicas
+            </p>
+            <a 
+              href="https://www.instagram.com/fotografcomunicacaovisual/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+            >
+              <Instagram className="h-5 w-5" />
+              @fotografcomunicacaovisual
+            </a>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
