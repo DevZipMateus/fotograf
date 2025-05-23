@@ -35,7 +35,7 @@ const Contact = () => {
 
   const handleWhatsAppClick = () => {
     // Open WhatsApp with predefined message
-    window.open('https://wa.me/5521999999999?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20contábeis.', '_blank');
+    window.open('https://wa.me/5549988054778?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20produtos%20personalizados.', '_blank');
     
     // Show toast notification
     toast({
@@ -48,22 +48,22 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6 text-blue-500" />,
       title: 'Telefone',
-      details: '(21) 99999-9999',
-      action: 'tel:+5521999999999',
+      details: '(49) 98805-4778',
+      action: 'tel:+5549988054778',
       actionText: 'Contato via Telefone'
     },
     {
       icon: <Mail className="h-6 w-6 text-blue-500" />,
       title: 'Email',
-      details: 'contato@contabilidade.com',
-      action: 'mailto:contato@contabilidade.com',
+      details: 'fotografcv@hotmail.com',
+      action: 'mailto:fotografcv@hotmail.com',
       actionText: 'Contato via Email'
     },
     {
       icon: <MapPin className="h-6 w-6 text-blue-500" />,
       title: 'Endereço',
-      details: 'Av. Presidente Vargas, 123, Centro, Rio de Janeiro - RJ',
-      action: 'https://maps.google.com',
+      details: 'Avenida Santo Antônio, 380, Chapecó - SC',
+      action: 'https://maps.google.com/?q=Avenida+Santo+Antônio+380+Chapecó+SC',
       actionText: 'Ver no Mapa'
     }
   ];
@@ -82,7 +82,7 @@ const Contact = () => {
           </div>
           <h2 className="section-title text-3xl md:text-4xl font-bold mb-4">Entre em Contato Conosco</h2>
           <p className="section-subtitle text-slate-600">
-            Estamos prontos para atender às suas necessidades contábeis. Entre em contato 
+            Estamos prontos para atender suas necessidades de personalização. Entre em contato 
             através de um dos nossos canais de atendimento ou nos envie uma mensagem pelo WhatsApp.
           </p>
         </motion.div>
@@ -144,7 +144,7 @@ const Contact = () => {
 
             <div className="mt-10 overflow-hidden rounded-xl border border-slate-200 h-64 shadow-md">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2960758544593!2d-43.19234492359807!3d-22.903458836872207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5fd24e0bff%3A0x99447fc2399718e9!2sAv.%20Pres.%20Vargas%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1718121266831!5m2!1spt-BR!2sbr" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57551.38125432507!2d-52.68773398983812!3d-27.10104472156008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b666dded2d39%3A0x49689aceeaca6071!2sAv.%20Santo%20Ant%C3%B4nio%2C%20380%20-%20Chapec%C3%B3%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1720027350719!5m2!1spt-BR!2sbr" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

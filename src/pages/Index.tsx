@@ -9,6 +9,7 @@ import Services from '@/components/sections/Services';
 import Contact from '@/components/sections/Contact';
 import FloatingButton from '@/components/ui/FloatingButton';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -45,8 +46,17 @@ const Index = () => {
       animate={{ opacity: 1 }}
       className="overflow-hidden"
     >
+      <Helmet>
+        <title>Fotograf Personalizados | Produtos Personalizados em Chapecó</title>
+        <meta name="description" content="Na Fotograf, transformamos ideias em produtos únicos personalizados como impressão de fotos, banners, adesivos, canecas, camisetas e muito mais." />
+        <meta name="keywords" content="fotograf, personalizados, impressão, fotos, banners, adesivos, canecas, camisetas, chapecó" />
+        <meta property="og:title" content="Fotograf Personalizados | Produtos Personalizados em Chapecó" />
+        <meta property="og:description" content="Produtos personalizados que unem criatividade, qualidade e identidade. Impressão de fotos, banners, adesivos, canecas e mais." />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <Header />
-      <main className="space-y-0"> {/* Removed spacing between sections */}
+      <main className="space-y-0">
         <Hero />
         <About />
         <Services />

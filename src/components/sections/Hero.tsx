@@ -34,11 +34,11 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex items-center justify-center bg-slate-50 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden"
       id="home"
     >
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/10 to-slate-50/95"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/10 to-white/95"></div>
         <div className="absolute inset-0 opacity-40 bg-[url('/images/pattern.svg')] bg-repeat"></div>
       </div>
 
@@ -47,10 +47,13 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-8"
         >
-          <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-blue-600 bg-blue-100 rounded-full">
-            Escritório de Contabilidade
-          </div>
+          <img 
+            src="/lovable-uploads/0d5cafbe-0356-46e7-a3e9-c0b30ef71569.png" 
+            alt="Fotograf Comunicação Visual Logo" 
+            className="h-32 md:h-40 mx-auto"
+          />
         </motion.div>
 
         <motion.h1
@@ -59,8 +62,8 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          Soluções Contábeis Personalizadas para o{' '}
-          <span className="text-gradient">Sucesso do Seu Negócio</span>
+          Transformamos ideias em{' '}
+          <span className="text-gradient">produtos únicos</span>
         </motion.h1>
 
         <motion.p
@@ -69,8 +72,8 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Combinamos experiência e tecnologia para oferecer serviços contábeis eficientes e
-          estratégicos, ajudando sua empresa a crescer e prosperar.
+          Especialistas na criação de itens personalizados que unem criatividade, qualidade e identidade.
+          Desde presentes especiais até brindes corporativos, oferecemos soluções feitas sob medida.
         </motion.p>
 
         <motion.div
@@ -80,10 +83,10 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <a href="#contact" className="btn-primary">
-            Agende uma Consulta
+            Solicitar Orçamento
           </a>
           <a href="#services" className="btn-secondary">
-            Conheça Nossos Serviços
+            Conheça Nossos Produtos
           </a>
         </motion.div>
 

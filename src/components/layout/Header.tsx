@@ -21,7 +21,7 @@ const Header = () => {
   const navLinks = [
     { name: 'Início', href: '#home' },
     { name: 'Sobre', href: '#about' },
-    { name: 'Serviços', href: '#services' },
+    { name: 'Produtos', href: '#services' },
     { name: 'Contato', href: '#contact' },
   ];
 
@@ -63,7 +63,11 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="block">
-              <span className="font-display text-2xl font-bold text-blue-600">Contabilidade</span>
+              <img 
+                src="/lovable-uploads/0d5cafbe-0356-46e7-a3e9-c0b30ef71569.png" 
+                alt="Fotograf Logo" 
+                className="h-10 w-auto"
+              />
             </a>
           </div>
 
@@ -80,7 +84,7 @@ const Header = () => {
               </a>
             ))}
             <a href="#contact" className="ml-4 btn-primary">
-              Agende uma Consulta
+              Solicitar Orçamento
             </a>
           </nav>
 
@@ -126,7 +130,7 @@ const Header = () => {
               className="block w-full text-center px-4 py-3 font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600"
               onClick={(e) => scrollToSection(e, '#contact')}
             >
-              Agende uma Consulta
+              Solicitar Orçamento
             </a>
           </div>
         </div>
