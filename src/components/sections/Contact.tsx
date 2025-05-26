@@ -62,7 +62,7 @@ const Contact = () => {
       icon: <MapPin className="h-6 w-6 text-orange-500" />,
       title: 'Endereço',
       details: 'R. Santo Antônio - Centro, Lebon Régis - SC, 89515-000',
-      action: 'https://maps.google.com/?q=R.+Santo+Antônio+Centro+Lebon+Régis+SC+89515-000',
+      action: 'https://maps.app.goo.gl/51TqsbYBxmgVLkGD8',
       actionText: 'Ver no Mapa'
     }
   ];
@@ -167,7 +167,7 @@ const Contact = () => {
 
             <div className="mt-10 overflow-hidden rounded-xl border border-orange-200 h-64 shadow-md">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14230.234567890123!2d-51.12345678901234!3d-26.987654321012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU5JzE1LjYiUyA1McKwMDcnMjQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1732705300000!5m2!1spt-BR!2sbr" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.7418234885896!2d-50.62932888795615!3d-27.509949776394773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dfa0f0b0b0b0b0%3A0x1234567890abcdef!2sR.%20Santo%20Ant%C3%B4nio%20-%20Centro%2C%20Lebon%20R%C3%A9gis%20-%20SC%2C%2089515-000!5e0!3m2!1spt-BR!2sbr!4v1732705400000!5m2!1spt-BR!2sbr" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
