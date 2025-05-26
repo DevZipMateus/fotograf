@@ -36,13 +36,13 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       id="home"
       style={{
-        backgroundImage: `url('/lovable-uploads/130ec28c-6d3f-401b-b57f-b4232219457b.png')`,
+        backgroundImage: `url('/lovable-uploads/852b96e2-1744-458b-809a-7808581e4a19.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="absolute inset-0 z-0 bg-black/20"></div>
+      <div className="absolute inset-0 z-0 bg-black/10"></div>
 
       <div className="section-container relative z-10 flex flex-col items-center text-center">
         <motion.div
@@ -54,7 +54,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/0d5cafbe-0356-46e7-a3e9-c0b30ef71569.png" 
             alt="Fotograf Comunicação Visual Logo" 
-            className="h-32 md:h-40 mx-auto drop-shadow-lg"
+            className="h-24 md:h-32 mx-auto drop-shadow-lg"
           />
         </motion.div>
 
@@ -64,8 +64,7 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          Transformamos ideias em{' '}
-          <span className="text-orange-600">produtos únicos</span>
+          Transformamos ideias em produtos únicos
         </motion.h1>
 
         <motion.p
