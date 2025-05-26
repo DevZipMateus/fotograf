@@ -36,13 +36,14 @@ const Hero = () => {
       style={{
         backgroundImage: `url('/lovable-uploads/130ec28c-6d3f-401b-b57f-b4232219457b.png')`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'scroll'
       }}
     >
       <div className="absolute inset-0 z-0 bg-black/20"></div>
 
-      <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto py-8 sm:py-16">
+      <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto py-20 sm:py-16">
         <motion.div 
           initial={{ opacity: 0, y: 20 }} 
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }} 
@@ -56,14 +57,14 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }} 
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }} 
           transition={{ duration: 0.8, delay: 0.4 }} 
-          className="text-base sm:text-lg md:text-xl text-amber-800 max-w-2xl mb-6 sm:mb-8 drop-shadow-sm px-4"
+          className="text-base sm:text-lg md:text-xl text-amber-800 max-w-2xl mb-8 sm:mb-12 drop-shadow-sm px-4"
         >
           Especialistas na criação de itens personalizados que unem criatividade, qualidade e identidade.
           Desde presentes especiais até brindes corporativos, oferecemos soluções feitas sob medida.
         </motion.p>
 
         <motion.div 
-          className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-12 sm:mb-16 w-full max-w-md sm:max-w-none" 
+          className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-16 sm:mb-20 w-full max-w-md sm:max-w-none" 
           initial={{ opacity: 0, y: 20 }} 
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }} 
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -83,7 +84,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.div 
-          className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center" 
+          className="absolute bottom-8 sm:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center" 
           initial={{ opacity: 0 }} 
           animate={isVisible ? { opacity: 1 } : { opacity: 0 }} 
           transition={{ duration: 0.8, delay: 0.9 }}
