@@ -92,7 +92,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-slate-700 hover:text-blue-500 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-amber-800 hover:text-orange-600 hover:bg-orange-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <span className="sr-only">Abrir menu</span>
@@ -113,12 +113,12 @@ const Header = () => {
           isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         )}
       >
-        <div className="px-4 py-3 space-y-1 bg-white/95 backdrop-blur-sm border-t">
+        <div className="px-4 py-3 space-y-1 bg-white/95 backdrop-blur-sm border-t border-orange-200">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-500 hover:bg-slate-50"
+              className="block px-3 py-2 rounded-md text-base font-medium text-amber-800 hover:text-orange-600 hover:bg-orange-50"
               onClick={(e) => scrollToSection(e, link.href)}
             >
               {link.name}
@@ -127,7 +127,7 @@ const Header = () => {
           <div className="pt-2">
             <a
               href="#contact"
-              className="block w-full text-center px-4 py-3 font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600"
+              className="block w-full text-center px-4 py-3 font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600"
               onClick={(e) => scrollToSection(e, '#contact')}
             >
               Solicitar Orçamento
