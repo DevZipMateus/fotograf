@@ -1,7 +1,6 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { cn } from '@/lib/utils';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,13 +33,16 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
       id="home"
+      style={{
+        backgroundImage: `url('/lovable-uploads/130ec28c-6d3f-401b-b57f-b4232219457b.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/10 to-white/95"></div>
-        <div className="absolute inset-0 opacity-40 bg-[url('/images/pattern.svg')] bg-repeat"></div>
-      </div>
+      <div className="absolute inset-0 z-0 bg-black/20"></div>
 
       <div className="section-container relative z-10 flex flex-col items-center text-center">
         <motion.div
@@ -52,22 +54,22 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/0d5cafbe-0356-46e7-a3e9-c0b30ef71569.png" 
             alt="Fotograf Comunicação Visual Logo" 
-            className="h-32 md:h-40 mx-auto"
+            className="h-32 md:h-40 mx-auto drop-shadow-lg"
           />
         </motion.div>
 
         <motion.h1
-          className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight lg:leading-tight mb-6 max-w-4xl"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight lg:leading-tight mb-6 max-w-4xl text-amber-900 drop-shadow-md"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           Transformamos ideias em{' '}
-          <span className="text-gradient">produtos únicos</span>
+          <span className="text-orange-600">produtos únicos</span>
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-slate-600 max-w-2xl mb-8"
+          className="text-lg md:text-xl text-amber-800 max-w-2xl mb-8 drop-shadow-sm"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -82,10 +84,10 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <a href="#contact" className="btn-primary">
+          <a href="#contact" className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg">
             Solicitar Orçamento
           </a>
-          <a href="#services" className="btn-secondary">
+          <a href="#services" className="bg-white/90 border border-orange-200 hover:border-orange-300 text-amber-800 px-6 py-3 rounded-lg font-medium shadow-lg transition-all duration-200 backdrop-blur-sm">
             Conheça Nossos Produtos
           </a>
         </motion.div>
@@ -96,10 +98,10 @@ const Hero = () => {
           animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
         >
-          <div className="w-6 h-10 border-2 border-slate-400 rounded-full flex justify-center p-1">
-            <div className="w-1.5 h-3 bg-slate-400 rounded-full animate-bounce"></div>
+          <div className="w-6 h-10 border-2 border-amber-700 rounded-full flex justify-center p-1">
+            <div className="w-1.5 h-3 bg-amber-700 rounded-full animate-bounce"></div>
           </div>
-          <span className="text-sm text-slate-500 mt-2">Role para baixo</span>
+          <span className="text-sm text-amber-700 mt-2 drop-shadow-sm">Role para baixo</span>
         </motion.div>
       </div>
     </section>

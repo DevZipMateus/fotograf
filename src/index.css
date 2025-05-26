@@ -7,87 +7,88 @@
 
 @layer base {
   :root {
-    /* 60-30-10 Color Rule */
-    --primary-color: 210 40% 98%; /* Slate 50 - 60% */
-    --secondary-color: 216 100% 50%; /* Blue 500 - 30% */
-    --accent-color: 222 47% 11%; /* Slate 900 - 10% */
+    /* 60-30-10 Color Rule - Warm palette inspired by the image */
+    --primary-color: 249 244 235; /* Warm beige - 60% */
+    --secondary-color: 251 146 60; /* Orange 400 - 30% */
+    --accent-color: 120 53 15; /* Amber 900 - 10% */
     
     --background: var(--primary-color);
     --foreground: var(--accent-color);
 
-    --card: 0 0% 100%;
+    --card: 254 252 232; /* Warm white */
     --card-foreground: var(--accent-color);
 
-    --popover: 0 0% 100%;
+    --popover: 254 252 232;
     --popover-foreground: var(--accent-color);
 
     --primary: var(--secondary-color);
-    --primary-foreground: 210 40% 98%;
+    --primary-foreground: 254 252 232;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 254 215 170; /* Orange 200 */
+    --secondary-foreground: 120 53 15;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 254 215 170;
+    --muted-foreground: 146 64 14;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 254 215 170;
+    --accent-foreground: 120 53 15;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 220 38 38;
+    --destructive-foreground: 254 252 232;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 253 186 116; /* Orange 300 */
+    --input: 253 186 116;
+    --ring: 120 53 15;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 254 252 232;
+    --sidebar-foreground: 120 53 15;
+    --sidebar-primary: 251 146 60;
+    --sidebar-primary-foreground: 254 252 232;
+    --sidebar-accent: 254 215 170;
+    --sidebar-accent-foreground: 120 53 15;
+    --sidebar-border: 253 186 116;
+    --sidebar-ring: 251 146 60;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 120 53 15;
+    --foreground: 254 252 232;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 146 64 14;
+    --card-foreground: 254 252 232;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 146 64 14;
+    --popover-foreground: 254 252 232;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 254 252 232;
+    --primary-foreground: 120 53 15;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 180 83 9;
+    --secondary-foreground: 254 252 232;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 180 83 9;
+    --muted-foreground: 253 186 116;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 180 83 9;
+    --accent-foreground: 254 252 232;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 220 38 38;
+    --destructive-foreground: 254 252 232;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 180 83 9;
+    --input: 180 83 9;
+    --ring: 253 186 116;
+    
+    --sidebar-background: 120 53 15;
+    --sidebar-foreground: 254 252 232;
+    --sidebar-primary: 251 146 60;
+    --sidebar-primary-foreground: 120 53 15;
+    --sidebar-accent: 180 83 9;
+    --sidebar-accent-foreground: 254 252 232;
+    --sidebar-border: 180 83 9;
+    --sidebar-ring: 251 146 60;
   }
 }
 
@@ -99,6 +100,7 @@
   body {
     @apply bg-background text-foreground font-sans;
     -webkit-font-smoothing: antialiased;
+    background-color: rgb(249 244 235); /* Warm beige background */
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -113,19 +115,19 @@
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-3 text-slate-900;
+    @apply text-3xl md:text-4xl font-bold mb-3 text-amber-900;
   }
   
   .section-subtitle {
-    @apply text-lg md:text-xl text-slate-600 max-w-3xl mb-8;
+    @apply text-lg md:text-xl text-amber-800 max-w-3xl mb-8;
   }
   
   .btn-primary {
-    @apply bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200;
+    @apply bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg;
   }
   
   .btn-secondary {
-    @apply bg-white border border-slate-200 hover:border-slate-300 text-slate-700 px-6 py-3 rounded-lg font-medium shadow-subtle transition-all duration-200;
+    @apply bg-orange-50 border border-orange-200 hover:border-orange-300 text-amber-800 px-6 py-3 rounded-lg font-medium shadow-subtle transition-all duration-200;
   }
   
   .card-hover {
@@ -133,20 +135,21 @@
   }
   
   .nav-link {
-    @apply relative px-3 py-2 text-slate-700 hover:text-blue-500 transition-colors duration-200 font-medium;
+    @apply relative px-3 py-2 text-amber-800 hover:text-orange-600 transition-colors duration-200 font-medium;
   }
   
   .nav-link-active {
-    @apply text-blue-500 font-semibold;
+    @apply text-orange-600 font-semibold;
   }
   
   .nav-link-active::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 rounded-full;
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-orange-500 rounded-full;
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-blue;
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(45deg, #f97316 0%, #ea580c 100%);
   }
   
   /* WhatsApp floating button animations */
