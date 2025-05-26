@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Instagram } from 'lucide-react';
@@ -62,8 +61,8 @@ const Contact = () => {
     {
       icon: <MapPin className="h-6 w-6 text-orange-500" />,
       title: 'Endereço',
-      details: 'Avenida Santo Antônio, 380, Chapecó - SC',
-      action: 'https://maps.google.com/?q=Avenida+Santo+Antônio+380+Chapecó+SC',
+      details: 'Rua Lauro Müller, 52E - Centro, Chapecó - SC',
+      action: 'https://www.google.com/maps/place/Fotograf+Comunica%C3%A7%C3%A3o+Visual+e+personalizados/@-26.9325667,-50.6942426,626m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94e1272a9521ab89:0x722fcd35e79d80b3!8m2!3d-26.9325667!4d-50.6942426!16s%2Fg%2F11l4np977j?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D',
       actionText: 'Ver no Mapa'
     }
   ];
@@ -158,6 +157,8 @@ const Contact = () => {
                     <p className="mt-1 text-amber-800">{item.details}</p>
                     <a 
                       href={item.action} 
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="mt-2 inline-block text-sm font-medium text-orange-600 hover:text-orange-700 hover:underline"
                     >
                       {item.actionText}
@@ -169,7 +170,7 @@ const Contact = () => {
 
             <div className="mt-10 overflow-hidden rounded-xl border border-orange-200 h-64 shadow-md">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57551.38125432507!2d-52.68773398983812!3d-27.10104472156008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b666dded2d39%3A0x49689aceeaca6071!2sAv.%20Santo%20Ant%C3%B4nio%2C%20380%20-%20Chapec%C3%B3%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1720027350719!5m2!1spt-BR!2sbr" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.862533252389!2d-50.69424260000001!3d-26.9325667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e1272a9521ab89%3A0x722fcd35e79d80b3!2sFotograf%20Comunica%C3%A7%C3%A3o%20Visual%20e%20personalizados!5e0!3m2!1spt-BR!2sbr!4v1732705200000!5m2!1spt-BR!2sbr" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
