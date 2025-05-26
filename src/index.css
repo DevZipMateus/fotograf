@@ -109,6 +109,23 @@
 }
 
 @layer components {
+  /* Hero background images with responsive behavior */
+  .hero-background {
+    /* Mobile background */
+    background-image: url('/lovable-uploads/942584b2-7516-4e4c-acc9-662f33d3e48d.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
+  /* Desktop background */
+  @media (min-width: 768px) {
+    .hero-background {
+      background-image: url('/lovable-uploads/130ec28c-6d3f-401b-b57f-b4232219457b.png');
+    }
+  }
+
   /* Reduced spacing in section containers */
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16;

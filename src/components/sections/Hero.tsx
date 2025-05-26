@@ -31,15 +31,8 @@ const Hero = () => {
   return (
     <section 
       ref={sectionRef} 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8" 
-      id="home" 
-      style={{
-        backgroundImage: `url('/lovable-uploads/130ec28c-6d3f-401b-b57f-b4232219457b.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'scroll'
-      }}
+      className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8" 
+      id="home"
     >
       <div className="absolute inset-0 z-0 bg-black/20"></div>
 
