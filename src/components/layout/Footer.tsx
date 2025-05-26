@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="mr-2 h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
-                <span className="text-orange-100">Rua Lauro Müller, 52E<br />Centro - Chapecó - SC</span>
+                <span className="text-orange-100">R. Santo Antônio - Centro<br />Lebon Régis - SC, 89515-000</span>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-2 h-5 w-5 text-orange-400 flex-shrink-0" />

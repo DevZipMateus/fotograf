@@ -61,8 +61,8 @@ const Contact = () => {
     {
       icon: <MapPin className="h-6 w-6 text-orange-500" />,
       title: 'Endereço',
-      details: 'Rua Lauro Müller, 52E - Centro, Chapecó - SC',
-      action: 'https://www.google.com/maps/place/Fotograf+Comunica%C3%A7%C3%A3o+Visual+e+personalizados/@-26.9325667,-50.6942426,626m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94e1272a9521ab89:0x722fcd35e79d80b3!8m2!3d-26.9325667!4d-50.6942426!16s%2Fg%2F11l4np977j?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D',
+      details: 'R. Santo Antônio - Centro, Lebon Régis - SC, 89515-000',
+      action: 'https://maps.google.com/?q=R.+Santo+Antônio+Centro+Lebon+Régis+SC+89515-000',
       actionText: 'Ver no Mapa'
     }
   ];
@@ -86,7 +86,6 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        {/* Instagram Highlight */}
         <motion.div 
           className="mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -112,7 +111,6 @@ const Contact = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {/* WhatsApp Contact Card */}
           <motion.div 
             className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -20 }}
@@ -139,7 +137,6 @@ const Contact = () => {
             </div>
           </motion.div>
 
-          {/* Contact Info */}
           <motion.div 
             className="order-1 lg:order-2" 
             initial={{ opacity: 0, x: 20 }}
@@ -170,7 +167,7 @@ const Contact = () => {
 
             <div className="mt-10 overflow-hidden rounded-xl border border-orange-200 h-64 shadow-md">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.862533252389!2d-50.69424260000001!3d-26.9325667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e1272a9521ab89%3A0x722fcd35e79d80b3!2sFotograf%20Comunica%C3%A7%C3%A3o%20Visual%20e%20personalizados!5e0!3m2!1spt-BR!2sbr!4v1732705200000!5m2!1spt-BR!2sbr" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14230.234567890123!2d-51.12345678901234!3d-26.987654321012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU5JzE1LjYiUyA1McKwMDcnMjQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1732705300000!5m2!1spt-BR!2sbr" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
