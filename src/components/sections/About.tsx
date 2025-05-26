@@ -64,8 +64,10 @@ const About = () => {
           </div>
           <h2 className="section-title">Quem Somos</h2>
           <p className="section-subtitle">
-            Somos especialistas em transformar ideias em produtos personalizados únicos. Com anos de experiência no mercado,
-            oferecemos soluções criativas e de alta qualidade que unem design, funcionalidade e identidade visual.
+            Na Fotograf, transformamos ideias em produtos únicos. Somos especializados na criação de itens personalizados que unem criatividade, qualidade e identidade. Desde presentes especiais e lembranças marcantes até brindes corporativos e produtos promocionais, oferecemos soluções feitas sob medida para cada cliente.
+          </p>
+          <p className="text-lg text-slate-600 max-w-3xl mt-4">
+            Nosso portfólio inclui camisetas, canecas, agendas, itens de papelaria, chaveiros, acessórios, embalagens personalizadas e muito mais. Trabalhamos com tecnologia de ponta e um atendimento próximo, garantindo resultados que encantam e fortalecem conexões. Seja para eternizar momentos, divulgar sua marca ou surpreender alguém especial, estamos aqui para dar forma ao que você imagina.
           </p>
         </motion.div>
 
