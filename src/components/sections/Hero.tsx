@@ -31,7 +31,7 @@ const Hero = () => {
   return (
     <section 
       ref={sectionRef} 
-      className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8" 
+      className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8 pt-16 md:pt-20" 
       id="home"
     >
       <div className="absolute inset-0 z-0 bg-black/20"></div>
