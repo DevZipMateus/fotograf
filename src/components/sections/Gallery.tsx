@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -96,7 +95,7 @@ const Gallery = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.7 }}
         >
-          <div className="inline-block px-3 py-1 mb-4 text-sm font-medium text-blue-600 bg-blue-100 rounded-full">
+          <div className="inline-block px-3 py-1 mb-4 text-sm font-medium text-orange-600 bg-orange-100 rounded-full">
             Galeria de Produtos
           </div>
           <h2 className="section-title">Nossos Trabalhos</h2>
@@ -123,7 +122,7 @@ const Gallery = () => {
               {galleryImages.map((image, index) => (
                 <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                   <motion.div 
-                    className="bg-slate-50 rounded-xl overflow-hidden shadow-subtle card-hover"
+                    className="bg-orange-50 rounded-xl overflow-hidden shadow-subtle card-hover"
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
                     transition={{ duration: 0.7, delay: 0.4 + index * 0.1 }}
@@ -136,7 +135,7 @@ const Gallery = () => {
                       />
                     </div>
                     <div className="p-4">
-                      <h3 className="font-semibold text-slate-900 text-center">
+                      <h3 className="font-semibold text-amber-900 text-center">
                         {image.title}
                       </h3>
                     </div>
@@ -155,7 +154,7 @@ const Gallery = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.7, delay: 0.8 }}
         >
-          <p className="text-slate-600 mb-6">
+          <p className="text-amber-800 mb-6">
             Gostou do que viu? Entre em contato e transforme sua ideia em realidade!
           </p>
           <a href="#contact" className="btn-primary">

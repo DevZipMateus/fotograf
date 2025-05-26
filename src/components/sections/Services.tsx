@@ -30,49 +30,49 @@ const Services = () => {
 
   const services = [
     {
-      icon: <Printer className="h-8 w-8 text-blue-500" />,
+      icon: <Printer className="h-8 w-8 text-orange-500" />,
       title: 'Impressão de Fotos',
       description: 'Impressões de alta qualidade em diversos tamanhos e acabamentos para eternizar seus momentos especiais.'
     },
     {
-      icon: <Image className="h-8 w-8 text-blue-500" />,
+      icon: <Image className="h-8 w-8 text-orange-500" />,
       title: 'Banners',
       description: 'Banners personalizados para eventos, divulgação comercial e decoração, em diferentes materiais e tamanhos.'
     },
     {
-      icon: <Sticker className="h-8 w-8 text-blue-500" />,
+      icon: <Sticker className="h-8 w-8 text-orange-500" />,
       title: 'Adesivos',
       description: 'Adesivos personalizados para diversas finalidades, desde rótulos até decoração, em vinil de alta durabilidade.'
     },
     {
-      icon: <Coffee className="h-8 w-8 text-blue-500" />,
+      icon: <Coffee className="h-8 w-8 text-orange-500" />,
       title: 'Canecas Personalizadas',
       description: 'Canecas de cerâmica, polímero e mágicas com sua foto, arte ou logotipo para presentes e lembranças.'
     },
     {
-      icon: <Shirt className="h-8 w-8 text-blue-500" />,
+      icon: <Shirt className="h-8 w-8 text-orange-500" />,
       title: 'Camisetas',
       description: 'Camisetas personalizadas para eventos, empresas ou presentes especiais com estampas digitais de alta definição.'
     },
     {
-      icon: <BookOpen className="h-8 w-8 text-blue-500" />,
+      icon: <BookOpen className="h-8 w-8 text-orange-500" />,
       title: 'Cartões e Tags',
       description: 'Cartões de visita, convites, tags e materiais impressos para sua comunicação visual com acabamento profissional.'
     },
     {
-      icon: <ShoppingBag className="h-8 w-8 text-blue-500" />,
+      icon: <ShoppingBag className="h-8 w-8 text-orange-500" />,
       title: 'Copos Térmicos',
       description: 'Copos térmicos personalizados para manter suas bebidas na temperatura ideal, perfeitos para uso diário ou presentes.'
     },
     {
-      icon: <Gift className="h-8 w-8 text-blue-500" />,
+      icon: <Gift className="h-8 w-8 text-orange-500" />,
       title: 'Itens Personalizados',
       description: 'Diversos itens personalizáveis como chaveiros, agendas, embalagens e produtos promocionais para sua marca.'
     }
   ];
 
   return (
-    <section ref={sectionRef} id="services" className="bg-slate-50 py-16">
+    <section ref={sectionRef} id="services" className="bg-orange-50 py-16">
       <div className="section-container">
         <motion.div 
           className="text-center max-w-3xl mx-auto mb-16" 
@@ -80,7 +80,7 @@ const Services = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.7 }}
         >
-          <div className="inline-block px-3 py-1 mb-4 text-sm font-medium text-blue-600 bg-blue-100 rounded-full">
+          <div className="inline-block px-3 py-1 mb-4 text-sm font-medium text-orange-600 bg-orange-100 rounded-full">
             Nossos Produtos
           </div>
           <h2 className="section-title">Soluções Personalizadas</h2>
@@ -99,11 +99,11 @@ const Services = () => {
               animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.7, delay: 0.2 + index * 0.1 }}
             >
-              <div className="mb-4 bg-blue-50 w-16 h-16 rounded-lg flex items-center justify-center">
+              <div className="mb-4 bg-orange-50 w-16 h-16 rounded-lg flex items-center justify-center">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-slate-600">{service.description}</p>
+              <h3 className="text-xl font-semibold mb-3 text-amber-900">{service.title}</h3>
+              <p className="text-amber-800">{service.description}</p>
             </motion.div>
           ))}
         </div>
