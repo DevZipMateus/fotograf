@@ -31,17 +31,17 @@ const Hero = () => {
   return (
     <section 
       ref={sectionRef} 
-      className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8 pt-16 md:pt-20" 
+      className="hero-background relative min-h-screen flex items-start justify-center overflow-hidden px-4 sm:px-6 lg:px-8 pt-32 md:pt-40" 
       id="home"
     >
       <div className="absolute inset-0 z-0 bg-black/20"></div>
 
-      <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto py-20 sm:py-16">
+      <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto py-8 sm:py-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-6 sm:mb-8"
+          className="mb-8 sm:mb-10"
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-amber-900 mb-4 drop-shadow-lg">
             Transformando ideias em produtos únicos
@@ -55,7 +55,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-16 sm:mb-20 w-full max-w-md sm:max-w-none py-[20px]"
+          className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-16 sm:mb-20 w-full max-w-md sm:max-w-none justify-center items-center"
         >
           <a href="#contact" className="bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg text-center text-sm sm:text-base">
             Solicitar Orçamento
