@@ -43,7 +43,12 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-6 sm:mb-8"
         >
-          
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-amber-900 mb-4 drop-shadow-lg">
+            Transformando ideias em produtos únicos
+          </h1>
+          <p className="text-lg sm:text-xl md:text-2xl text-amber-800 max-w-3xl mx-auto drop-shadow-md">
+            Personalização com criatividade, qualidade e identidade
+          </p>
         </motion.div>
 
         <motion.div 
